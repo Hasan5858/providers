@@ -16,7 +16,7 @@ async function scrapeMovie(ctx: MovieScrapeContext): Promise<SourcererOutput> {
   return {
     embeds: [
       {
-        embedId: 'videasy',
+        embedId: 'videasy-embed',
         url: embedUrl,
       },
     ],
@@ -37,7 +37,7 @@ async function scrapeShow(ctx: ShowScrapeContext): Promise<SourcererOutput> {
   return {
     embeds: [
       {
-        embedId: 'videasy',
+        embedId: 'videasy-embed',
         url: embedUrl,
       },
     ],

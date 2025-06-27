@@ -4,7 +4,7 @@ import { EmbedScrapeContext } from '@/utils/context';
 import { NotFoundError } from '@/utils/errors';
 
 export const videasyScraper = makeEmbed({
-  id: 'videasy',
+  id: 'videasy-embed',
   name: 'VIDEASY',
   rank: 200,
   disabled: false,
