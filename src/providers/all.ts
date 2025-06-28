@@ -12,6 +12,7 @@ import { insertunitScraper } from '@/providers/sources/insertunit';
 import { mp4hydraScraper } from '@/providers/sources/mp4hydra';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
 import { vidsrcsuScraper } from '@/providers/sources/vidsrcsu';
+import { videasyScraper as videasySourceScraper } from '@/providers/sources/videasy';
 
 import {
   autoembedBengaliScraper,
@@ -98,6 +99,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     wecimaScraper,
     animeflvScraper,
     cinemaosScraper,
+    videasySourceScraper,
   ];
 }
 
