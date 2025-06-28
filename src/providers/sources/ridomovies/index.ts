@@ -42,7 +42,7 @@ const universalScraper = async (ctx: MovieScrapeContext | ShowScrapeContext) => 
     const matches = [...showPageResult.matchAll(regexPattern)];
     const episodeIds = matches.map((match) => match[1]);
     if (episodeIds.length === 0) throw new NotFoundError('No watchable item found');
-    const episodeId = episodeIds.at(-1);
+    const episodeId = episodeIds[episodeIds.length - 1];
     iframeSourceUrl = `/episodes/${episodeId}/videos`;
   }
 
