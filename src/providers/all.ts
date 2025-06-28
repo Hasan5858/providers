@@ -3,7 +3,6 @@ import { doodScraper } from '@/providers/embeds/dood';
 import { mixdropScraper } from '@/providers/embeds/mixdrop';
 import { turbovidScraper } from '@/providers/embeds/turbovid';
 import { upcloudScraper } from '@/providers/embeds/upcloud';
-import { videasyScraper } from '@/providers/embeds/videasy';
 import { autoembedScraper } from '@/providers/sources/autoembed';
 import { catflixScraper } from '@/providers/sources/catflix';
 import { ee3Scraper } from '@/providers/sources/ee3';
@@ -12,7 +11,6 @@ import { insertunitScraper } from '@/providers/sources/insertunit';
 import { mp4hydraScraper } from '@/providers/sources/mp4hydra';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
 import { vidsrcsuScraper } from '@/providers/sources/vidsrcsu';
-import { videasyScraper as videasySourceScraper } from '@/providers/sources/videasy';
 
 import {
   autoembedBengaliScraper,
@@ -99,7 +97,6 @@ export function gatherAllSources(): Array<Sourcerer> {
     wecimaScraper,
     animeflvScraper,
     cinemaosScraper,
-    videasySourceScraper,
   ];
 }
 
@@ -144,7 +141,6 @@ export function gatherAllEmbeds(): Array<Embed> {
     streamwishSpanishScraper,
     streamwishEnglishScraper,
     streamtapeLatinoScraper,
-    videasyScraper,
     ...cinemaosEmbeds,
     // ...cinemaosHexaEmbeds,
   ];
